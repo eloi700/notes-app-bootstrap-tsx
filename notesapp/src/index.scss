@@ -1,0 +1,28 @@
+@import 'bootstrap/scss/bootstrap';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontFamily: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  --bgColor: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+}
+@import 'bootstrap/scss/bootstrap';
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include center;
+  min-height: 100vh;
+  font-family: var(--fontFamily);
+  background: var(--bgColor);
+}
